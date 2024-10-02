@@ -16,5 +16,103 @@
     <p>Un site de teste.</p>
     <p>Un site de teste.</p>
     <p>Un site de teste.</p>
+    <p>la vie est belle</p>
+    <p>la vie est belle</p>
+    <div>
+      <button onclick="changeColor()">Change Color</button>
+      <button onclick="changeBackgroundColor()">Change Background Color</button>
+      <button onclick="changeFontSize()">Change Font Size</button>
+      <button onclick="changeFontFamily()">Change Font Family</button>
+      <button onclick="changeTextAlign()">Change Text Align</button>
+      <button onclick="changeTextTransform()">Change Text Transform</button>
+      <button onclick="changeTextDecoration()">Change Text Decoration</button>
+      <button onclick="changeLineHeight()">Change Line Height</button>
+      <button onclick="changeLetterSpacing()">Change Letter Spacing</button>
+      <button onclick="changeWordSpacing()">Change Word Spacing</button>
+      <button onclick="changeTextShadow()">Change Text Shadow</button>
+      <button onclick="changeBoxShadow()">Change Box Shadow</button>
+      <button onclick="changeBorder()">Change Border</button>
+      <button onclick="changeBorderRadius()">Change Border Radius</button>
+      <button onclick="changePadding()">Change Padding</button>
+      <button onclick="changeMargin()">Change Margin</button>
+      <button onclick="changeWidth()">Change Width</button>
+      <button onclick="changeHeight()">Change Height</button>
+      <button onclick="changeMaxWidth()">Change Max Width</button>
+      <button onclick="changeMinWidth()">Change Min Width</button>
+      <button onclick="changeMaxHeight()">Change Max Height</button>
+      <button onclick="changeMinHeight()">Change Min Height</button>
+      <button onclick="changeDisplay()">Change Display</button>
+      <button onclick="changeVisibility()">Change Visibility</button>
+      <button onclick="changeOpacity()">Change Opacity</button>
+      <button onclick="changePosition()">Change Position</button>
+      <button onclick="changeTop()">Change Top</button>
+      <button onclick="changeRight()">Change Right</button>
+
+      <button onclick="changeBottom()">Change Bottom</button>
+      <button onclick="changeLeft()">Change Left</button>
+      <button onclick="changeZIndex()">Change Z Index</button>
+    </div>
+    <script>
+              function changeColor() {
+                document.body.style.backgroundColor = "red";
+              }
+              setInterval(function() {
+                document.body.style.backgroundColor = getRandomColor();
+              }, 5000);
+              function getRandomColor() {
+                var letters = "0123456789ABCDEF";
+                var color = "#";
+                for (var i = 0; i < 6; i++) {
+                  color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+              }
+              document.addEventListener("DOMContentLoaded", function() {
+                document.body.style.backgroundColor = getRandomColor();
+              });
+              document.addEventListener("keydown", function(event) {
+                if (event.key === "Shift") {
+                  document.body.style.backgroundColor = "blue";
+                }
+              });
+              document.addEventListener("keyup", function(event) {
+                if (event.key === "Shift") {
+                  document.body.style.backgroundColor = "red";
+                }
+              });
+              document.addEventListener("mousemove", function(event) {
+                document.body.style.backgroundColor = "green";
+              });
+              document.addEventListener("mouseout", function(event) {
+                document.body.style.backgroundColor = "red";
+              });
+              document.addEventListener("contextmenu", function(event) {
+                event.preventDefault();
+                document.body.style.backgroundColor = "yellow";
+              });
+              document.addEventListener("click", function(event) {
+                document.body.style.backgroundColor = "purple";
+              });
+              document.addEventListener("dblclick", function(event) {
+                document.body.style.backgroundColor = "orange";
+              });
+              document.addEventListener("scroll", function(event) {
+                document.body.style.backgroundColor = "pink";
+              });
+              document.addEventListener("resize", function(event) {
+                document.body.style.backgroundColor = "brown";
+              });
+              document.addEventListener("select", function(event) {
+                document.body.style.backgroundColor = "black";
+              });We love that you love Bito’s AI Code Completions!
+      You have hit your limit for AI Code Completions per day on your plan.
+      To receive more Completions, please upgrade your plan or contact mailto:support@bito.aiWe love that you love Bito’s AI Code Completions!
+      You have hit your limit for AI Code Completions per day on your plan.
+      To receive more Completions, please upgrade your plan or contact mailto:support@bito.aiWe love that you love Bito’s AI Code Completions!
+      You have hit your limit for AI Code Completions per day on your plan.
+      To receive more Completions, please upgrade your plan or contact mailto:support@bito.aiWe love that you love Bito’s AI Code Completions!
+      You have hit your limit for AI Code Completions per day on your plan.
+      To receive more Completions, please upgrade your plan or contact mailto:support@bito.ai
+    </script>
   </body>
 </html>
